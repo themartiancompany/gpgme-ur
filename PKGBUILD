@@ -1,4 +1,3 @@
-# $Id: PKGBUILD,v 1.20 2008/01/30 14:29:06 roman Exp $
 # Maintainer: Roman Kyrylych <roman@archlinux.org>
 # Contributor: Sarah Hay <sarah@archlinux.org>
 
