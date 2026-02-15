@@ -9,10 +9,9 @@ pkgbase = gpgme
 	license = LGPL-2.1-or-later
 	license = MIT
 	makedepends = git
-	depends = gcc-libs
-	depends = glib2
 	depends = glibc
 	depends = libassuan
+	depends = libassuan.so
 	depends = libgpg-error
 	depends = gnupg>=2
 	provides = libgpgme.so

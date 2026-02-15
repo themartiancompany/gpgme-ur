@@ -14,11 +14,9 @@ license=(
   LGPL-2.1-or-later
   MIT)
 depends=(
-  'gcc-libs'
-  'glib2'
   'glibc'
-  'libassuan'
-  'libgpg-error'
+  'libassuan' 'libassuan.so'
+  'libgpg-error' #'libgpg-error.so'
   'gnupg>=2')
 makedepends=('git')
 provides=('libgpgme.so')
