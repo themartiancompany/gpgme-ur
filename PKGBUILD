@@ -60,6 +60,8 @@ package() {
   cd ${pkgname}
 
   make DESTDIR="${pkgdir}" install
+  # that is not used, no?!
+  rm "${pkgdir}"/usr/lib/pkgconfig/gpgme-glib.pc
 
   install -vDm 644 LICENSES "$pkgdir/usr/share/licenses/$pkgname/MIT.txt"
 }
