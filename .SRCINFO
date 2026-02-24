@@ -1,7 +1,7 @@
 pkgbase = gpgme
 	pkgdesc = C wrapper library for GnuPG
 	pkgver = 2.0.1
-	pkgrel = 2
+	pkgrel = 3
 	url = https://www.gnupg.org/related_software/gpgme/
 	arch = x86_64
 	license = GPL-2.0-or-later
@@ -9,7 +9,6 @@ pkgbase = gpgme
 	license = LGPL-2.1-or-later
 	license = MIT
 	makedepends = git
-	depends = glib2
 	depends = glibc
 	depends = libassuan
 	depends = libassuan.so

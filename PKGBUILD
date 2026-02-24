@@ -4,7 +4,7 @@
 
 pkgname=gpgme
 pkgver=2.0.1
-pkgrel=2
+pkgrel=3
 pkgdesc='C wrapper library for GnuPG'
 arch=('x86_64')
 url='https://www.gnupg.org/related_software/gpgme/'
@@ -14,7 +14,6 @@ license=(
   LGPL-2.1-or-later
   MIT)
 depends=(
-  'glib2'
   'glibc'
   'libassuan' 'libassuan.so'
   'libgpg-error' #'libgpg-error.so'
