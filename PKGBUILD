@@ -168,7 +168,7 @@ pkgname=(
   "${pkgbase}"
 )
 pkgver=2.0.1
-pkgrel=10
+pkgrel=11
 _commit="e4adebe020b07bc47e583817576ce98ca93e9711"
 _bundle_commit="63f18298d3f5c5f7551301b1e183890c503c644a"
 _gnupg_pkgver=2.5
@@ -212,6 +212,7 @@ depends=(
 makedepends=(
   "autoconf"
   "automake"
+  "libtool"
   "${_libc}"
   "${_compiler}"
   "${_libcompiler}"
