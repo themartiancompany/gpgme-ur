@@ -155,13 +155,20 @@ if [[ ! -v "_like" ]]; then
     _like="never-gonna-give-you-up"
   fi
 fi
+if [[ ! -v "_tests" ]]; then
+  if [[ "${_os}" == "GNU/Linux" ]]; then
+    _tests="true"
+  elif [[ "${_os}" == "Android" ]]; then
+    _tests="false"
+  fi
+fi
 _pkg=gpgme
 pkgbase="${_pkg}"
 pkgname=(
   "${pkgbase}"
 )
 pkgver=2.0.1
-pkgrel=7
+pkgrel=8
 _commit="e4adebe020b07bc47e583817576ce98ca93e9711"
 _bundle_commit="63f18298d3f5c5f7551301b1e183890c503c644a"
 _gnupg_pkgver=2.5
@@ -359,8 +366,16 @@ build() {
     --prefix="/usr"
     --disable-fd-passing
     --disable-static
+    # This is disabled on GNU too
     --disable-gpgsm-test
   )
+  if [[ "${_tests}" == "false" ]]; then
+    _configure_opts+=(
+      --disable-gpgconf-test
+      --disable-gpg-test
+      --disable-g13-test
+    )
+  fi
   cd \
     "${_tarname}"
   ./configure \
