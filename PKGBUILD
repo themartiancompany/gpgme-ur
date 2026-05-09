@@ -161,7 +161,8 @@ pkgname=(
   "${pkgbase}"
 )
 pkgver=2.0.1
-pkgrel=3
+pkgrel=4
+_commit="e4adebe020b07bc47e583817576ce98ca93e9711"
 _bundle_commit="63f18298d3f5c5f7551301b1e183890c503c644a"
 _gnupg_pkgver=2.5
 _libassuan_pkgver=3.0.2
@@ -242,8 +243,8 @@ _tarname="${_pkg}-${_tag}"
 _tarfile="${_pkg}-${_tag}.${_archive_format}"
 _gitlab_sum="SKIP"
 _gitlab_sig_sum="SKIP"
-_github_sum=""
-_github_sig_sum=""
+_github_sum="fb66dc0ce1b197f751c47ace83740081164fece8ab7c1a72d07c5f15a1459776"
+_github_sig_sum="1b2404370def242a47ec9a6b06beac44fa3a274277261f7bb797d03bf0223ce4"
 _bundle_sum="5143c5caf0b19b5907db4b788f5c4bf261a838d158e70aab7303f110a75b20ba"
 _bundle_sig_sum="c3d3b354f9e1303847f0cf00b79782490ed8498aa9e2568e3c8e6c3246fa863d"
 # that crazy kid address
